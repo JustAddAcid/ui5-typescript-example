@@ -4,7 +4,7 @@ import Device       from "sap/ui/Device";
 export default {
     createDeviceModel(): JSONModel {
         //TODO|ui5ts: generate constructors
-        var oModel = new JSONModel(Device);
+        var oModel = new JSONModel(Device, true);
         oModel.setDefaultBindingMode(sap.ui.model.BindingMode.OneWay);
         return oModel;
     }

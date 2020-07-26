@@ -4,19 +4,19 @@
     "scripts": {
         "start": "concurrently \"npm run build:watch\" \"npm run serve\"",
         "serve": "lite-server -c=bs-config.json",
-        "build": "tsc -p tsconfig.json",
-        "build:watch": "tsc -p tsconfig.json -w",
+        "build": "tsc -p tsconfig.json --skipLibCheck",
+        "build:watch": "tsc -p tsconfig.json -w --skipLibCheck",
         "lint": "tslint ./src/**/*.ts -t verbose"
     },
     "dependencies": {
-        "ui5ts": "^0.3.0"
+        "ui5ts": "^0.3.2"
     },
     "devDependencies": {
-        "@types/es6-shim": "^0.31.35",
-        "@types/jquery": "^2.0.47",
-        "concurrently": "^3.2.0",
-        "lite-server": "^2.3.0",
-        "tslint": "^3.15.1",
-        "typescript": "^2.5.2"
+        "@types/es6-shim": "^0.31.40",
+        "@types/jquery": "^3.5.0",
+        "concurrently": "^5.2.0",
+        "lite-server": "^2.5.4",
+        "tslint": "^6.1.2",
+        "typescript": "^3.9.7"
     }
 }

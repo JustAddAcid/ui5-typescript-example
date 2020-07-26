@@ -19,7 +19,7 @@ export default class Detail extends BaseController
             busy : false,
             delay : 0,
             lineItemListTitle : this.getResourceBundle().getText("detailLineItemTableHeading")
-        });
+        }, true);
 
         this.getRouter().getRoute("object").attachPatternMatched(this._onObjectMatched, this);
 

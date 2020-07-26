@@ -15,7 +15,7 @@ export default class App extends BaseController {
         oViewModel = new JSONModel({
             busy : true,
             delay : 0
-        });
+        }, true);
         this.setModel(oViewModel, "appView");
 
         fnSetAppNotBusy = () => {
